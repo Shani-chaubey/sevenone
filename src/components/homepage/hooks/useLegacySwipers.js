@@ -5,30 +5,6 @@ import "swiper/css/bundle";
 
 const swiperConfigs = [
   {
-    selector: ".propertySwiper",
-    options: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      loop: true,
-      centeredSlides: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      breakpoints: {
-        700: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          centeredSlides: true,
-        },
-      },
-    },
-  },
-  {
     selector: ".locationSwiper",
     options: {
       slidesPerView: 1,
@@ -68,26 +44,6 @@ const swiperConfigs = [
         640: { slidesPerView: 2, spaceBetween: 10 },
         968: { slidesPerView: 4, spaceBetween: 10 },
         1400: { slidesPerView: 5, spaceBetween: 10 },
-      },
-    },
-  },
-  {
-    selector: ".developerSwiper",
-    options: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-      loop: true,
-      navigation: {
-        nextEl: ".developer-carousel .swiper-button-next",
-        prevEl: ".developer-carousel .swiper-button-prev",
-      },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      breakpoints: {
-        700: { slidesPerView: 5, spaceBetween: 20 },
-        0: { slidesPerView: 2, spaceBetween: 20 },
       },
     },
   },

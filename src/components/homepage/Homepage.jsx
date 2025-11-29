@@ -13,14 +13,16 @@ import HeadingSection from "./sections/HeadingSection";
 import PropertiesGrid from "./sections/PropertiesGrid";
 import WhyChooseUs from "./sections/WhyChooseUs";
 import TestimonialsCarousel from "./sections/TestimonialsCarousel";
+import DevelopersCarousel from "./sections/DevelopersCarousel";
 import Footer from "./sections/Footer";
+import FloatingButtons from "./sections/FloatingButtons";
 
 export default function Homepage() {
   useLegacySwipers();
 
   return (
     <div>
-      <SocialLinks />
+      {/* <SocialLinks /> */}
       <Header />
       <MobileMenu />
       <SearchOverlay />
@@ -31,8 +33,10 @@ export default function Homepage() {
       <HeadingSection />
       <PropertiesGrid />
       <WhyChooseUs />
+      {/* <DevelopersCarousel /> */}
       <TestimonialsCarousel />
       <Footer />
+      <FloatingButtons />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ToastProvider from "@/components/ToastProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Moneytree Realty",
+  title: "9 Square Yard",
   description:
     "Experience a modern real-estate landing page built with reusable Next.js components and immersive UI details.",
 };
@@ -42,6 +43,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <ToastProvider />
         <Script
           strategy="afterInteractive"
           src="https://code.jquery.com/jquery-3.6.0.min.js"

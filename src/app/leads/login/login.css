@@ -1,0 +1,115 @@
+.leads-login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1419 100%);
+  padding: 20px;
+  margin-top: -80px;
+}
+
+.leads-login-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+}
+
+.leads-login-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.leads-login-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.leads-login-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.leads-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.leads-login-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.leads-login-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.leads-login-input {
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.leads-login-input:focus {
+  outline: none;
+  border-color: #ff9900;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.1);
+}
+
+.leads-login-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.leads-login-error {
+  padding: 12px;
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  border-radius: 8px;
+  color: #ff6b6b;
+  font-size: 14px;
+  text-align: center;
+}
+
+.leads-login-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #ff9900 0%, #ff6600 100%);
+  border: none;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.leads-login-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 153, 0, 0.4);
+}
+
+.leads-login-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

@@ -1,238 +1,137 @@
 "use client";
-/* eslint-disable @next/next/no-img-element, @next/next/no-html-link-for-pages, jsx-a11y/alt-text, react/no-unescaped-entities */
+/* eslint-disable @next/next/no-img-element */
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import { developers, developersContent } from "@/data/content";
 
 export default function DevelopersCarousel() {
   return (
-    <div className="full-width-bg">
-            <div className="developer-carousel">
-              <p className="fakeTitle">Our Deve<span className="bg-green">lopers</span></p>
-              <div className="swiper-container developerSwiper">
-                <div className="swiper-wrapper">
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/dlf-limited">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="DLF Limited" loading="lazy" src="./assets/img/developer-logos/dlf-limited-logo.png" />
-                        </div>
-                        <h3>DLF Limited</h3>
-                      </div>
-                    </a>
+    <section className="developers-modern">
+      <div className="developers-modern-container">
+        <div className="developers-modern-header">
+          <span className="developers-modern-subtitle">
+            {developersContent.subtitle}
+          </span>
+          <h2 className="developers-modern-title">
+            {developersContent.title.main}{" "}
+            <span className="developers-modern-title-accent">
+              {developersContent.title.accent}
+            </span>
+          </h2>
+          <p className="developers-modern-description">
+            {developersContent.description}
+          </p>
+        </div>
+
+        <div className="developers-modern-swiper-wrapper">
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            spaceBetween={30}
+            slidesPerView="auto"
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            navigation={{
+              nextEl: ".developers-modern-nav-next",
+              prevEl: ".developers-modern-nav-prev",
+            }}
+            breakpoints={{
+              320: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              640: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+              },
+              968: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+              1400: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+              },
+            }}
+            className="developers-modern-swiper"
+          >
+            {developers.map((developer) => (
+              <SwiperSlide
+                key={developer.id}
+                className="developers-modern-slide"
+              >
+                <a
+                  href={developer.link}
+                  className="developers-modern-card-link"
+                >
+                  <div className="developers-modern-card">
+                    <div className="developers-modern-card-glow"></div>
+                    <div className="developers-modern-card-border"></div>
+                    <div className="developers-modern-logo-wrapper">
+                      <img
+                        src={developer.logo}
+                        alt={developer.name}
+                        className="developers-modern-logo"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 className="developers-modern-name">{developer.name}</h3>
                   </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/godrej-properties">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="Godrej Properties" loading="lazy" src="./assets/img/developer-logos/godrej-properties-logo.png" />
-                        </div>
-                        <h3>Godrej Properties</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/mahindra-lifespaces-developers">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="Mahindra Lifespace Developers" loading="lazy" src="./assets/img/developer-logos/mahindra-lifespaces-developers-logo.png" />
-                        </div>
-                        <h3>Mahindra Lifespace Developers</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/prestige-group">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="Prestige Group" loading="lazy" src="./assets/img/developer-logos/prestige-group-logo.png" />
-                        </div>
-                        <h3>Prestige Group</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/m3m-group">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="M3M Group" loading="lazy" src="./assets/img/developer-logos/m3m-group-logo.png" />
-                        </div>
-                        <h3>M3M Group</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/paras-buildtech">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="Paras Buildtech" loading="lazy" src="./assets/img/developer-logos/paras-buildtech-logo.png" />
-                        </div>
-                        <h3>Paras Buildtech</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/devika-group">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="Devika Group" loading="lazy" src="./assets/img/developer-logos/devika-group-logo.png" />
-                        </div>
-                        <h3>Devika Group</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/ace-group">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="Ace Group" loading="lazy" src="./assets/img/developer-logos/ace-group-logo.png" />
-                        </div>
-                        <h3>Ace Group</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/ametek-buildtech">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="Ametek Buildtech" loading="lazy" src="./assets/img/developer-logos/ametek-buildtech-logo.png" />
-                        </div>
-                        <h3>Ametek Buildtech</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/au-real-estate">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="AU Real Estate" loading="lazy" src="./assets/img/developer-logos/au-real-estate-logo.png" />
-                        </div>
-                        <h3>AU Real Estate</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/axis-ecorp">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="Axis Ecorp" loading="lazy" src="./assets/img/developer-logos/axis-ecorp-logo.png" />
-                        </div>
-                        <h3>Axis Ecorp</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/elan-group">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="Elan Group" loading="lazy" src="./assets/img/developer-logos/elan-group-logo.png" />
-                        </div>
-                        <h3>Elan Group</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/krisumi-corporation">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="Krisumi Corporation" loading="lazy" src="./assets/img/developer-logos/krisumi-corporation-logo.png" />
-                        </div>
-                        <h3>Krisumi Corporation</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/l-t-realty">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="L&T Realty" loading="lazy" src="./assets/img/developer-logos/l-t-realty-logo.png" />
-                        </div>
-                        <h3>L&amp;T Realty</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/piramal-realty">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="Piramal Realty" loading="lazy" src="./assets/img/developer-logos/piramal-realty-logo.png" />
-                        </div>
-                        <h3>Piramal Realty</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/sarvottam-group">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="Sarvottam Group" loading="lazy" src="./assets/img/developer-logos/sarvottam-group-logo.png" />
-                        </div>
-                        <h3>Sarvottam Group</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/signature-global">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="Signature Global" loading="lazy" src="./assets/img/developer-logos/signature-global-logo.png" />
-                        </div>
-                        <h3>Signature Global</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/tarc-ltd">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="Tarc LTD" loading="lazy" src="./assets/img/developer-logos/tarc-ltd-logo.png" />
-                        </div>
-                        <h3>Tarc LTD</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/civitech-developers">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="Civitech Developers" loading="lazy" src="./assets/img/developer-logos/civitech-developers-logo.png" />
-                        </div>
-                        <h3>Civitech Developers</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/rg-group">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="RG group" loading="lazy" src="./assets/img/developer-logos/rg-group-logo.png" />
-                        </div>
-                        <h3>RG group</h3>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="swiper-slide">
-                    <a href="./real-estate-developers/central-park">
-                      <div className="developer-card">
-                        <div className="developer-image">
-                          <img alt="Central park" loading="lazy" src="./assets/img/developer-logos/central-park-logo.png" />
-                        </div>
-                        <h3>Central park</h3>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div className="swiper-button-next">
-                  <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.04 1.96a1 1 0 0 0-1.497 1.32l.083.094L10.253 8l-4.627 4.626a1 1 0 0 0-.083 1.32l.083.094a1 1 0 0 0 1.32.084l.094-.084 5.334-5.333a1 1 0 0 0 .083-1.32l-.083-.094L7.04 1.96Z" fillRule="evenodd">
-                    </path>
-                  </svg>
-                </div>
-                <div className="swiper-button-prev">
-                  <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.96 1.96a1 1 0 0 1 1.497 1.32l-.083.094L5.747 8l4.627 4.626a1 1 0 0 1 .083 1.32l-.083.094a1 1 0 0 1-1.32.084l-.094-.084-5.334-5.333a1 1 0 0 1-.083-1.32l.083-.094L8.96 1.96Z" fillRule="evenodd">
-                    </path>
-                  </svg>
-                </div>
-              </div>
-            </div>
+                </a>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          <div className="developers-modern-navigation">
+            <button
+              className="developers-modern-nav-btn developers-modern-nav-prev"
+              aria-label="Previous developer"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 18L9 12L15 6"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+            <button
+              className="developers-modern-nav-btn developers-modern-nav-next"
+              aria-label="Next developer"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 18L15 12L9 6"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
           </div>
+        </div>
+      </div>
+    </section>
   );
 }

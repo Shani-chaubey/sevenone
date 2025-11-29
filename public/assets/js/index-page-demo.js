@@ -26,8 +26,26 @@ function fetchSuggestions(query) {
 
             // Handle click event
             listItem.addEventListener("click", () => {
-              document.querySelector("input[name=search]").value = keyword;
-              submitForm();
+              const input =
+                document.querySelector("input[name=search]") ||
+                document.querySelector("#searchInput");
+              if (input) {
+                input.value = keyword;
+                // Check if it's a React form
+                const form = input.closest("form[data-react-form='true']");
+                if (form) {
+                  // Let React handle it - trigger input change and form submit
+                  const inputEvent = new Event("input", { bubbles: true });
+                  input.dispatchEvent(inputEvent);
+                  const submitEvent = new Event("submit", {
+                    bubbles: true,
+                    cancelable: true,
+                  });
+                  form.dispatchEvent(submitEvent);
+                } else {
+                  submitForm();
+                }
+              }
             });
 
             suggestionsBox.appendChild(listItem);
@@ -64,11 +82,26 @@ function handleKeyNavigation(event) {
     } else if (event.key === "Enter") {
       // Select the highlighted suggestion or submit input value
       event.preventDefault();
-      if (activeIndex >= 0) {
-        const selectedSuggestion = suggestions[activeIndex].textContent;
-        document.querySelector("input[name=search]").value = selectedSuggestion;
+      const input =
+        document.querySelector("input[name=search]") ||
+        document.querySelector("#searchInput");
+      if (input) {
+        if (activeIndex >= 0) {
+          const selectedSuggestion = suggestions[activeIndex].textContent;
+          input.value = selectedSuggestion;
+        }
+        // Check if it's a React form
+        const form = input.closest("form[data-react-form='true']");
+        if (form) {
+          // Let React handle it
+          input.dispatchEvent(new Event("input", { bubbles: true }));
+          form.dispatchEvent(
+            new Event("submit", { bubbles: true, cancelable: true })
+          );
+        } else {
+          submitForm();
+        }
       }
-      submitForm();
     }
   }
 }
@@ -94,10 +127,13 @@ function handleFormSubmit(event) {
 }
 
 function submitForm() {
-  const input = document.querySelector("input[name=search]");
+  const input =
+    document.querySelector("input[name=search]") ||
+    document.querySelector("#searchInput");
+  if (!input) return; // If no input found, let React handle it
   const query = input.value.trim();
   if (query) {
-    window.location.href = `search?search=${encodeURIComponent(query)}`;
+    window.location.href = `/our-service?search=${encodeURIComponent(query)}`;
   } else {
     alert("Please enter a search term.");
   }

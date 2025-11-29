@@ -32,4 +32,25 @@ export const toggleLinkColor = (color) => (event) => {
 
 export const openLegacyForm = () => {
   callLegacyFunction("openForm");
+  // Also trigger the modern form
+  if (typeof window !== "undefined" && window.openForm) {
+    window.openForm();
+  }
+};
+
+export const openContactForm = () => {
+  if (typeof window !== "undefined") {
+    if (window.openForm) {
+      window.openForm();
+    } else {
+      // Fallback: trigger the form manually
+      const backdrop = document.querySelector(".lead-capture-modern-backdrop");
+      const dialog = document.querySelector(".lead-capture-modern-dialog");
+      if (backdrop && dialog) {
+        backdrop.classList.add("active");
+        dialog.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+    }
+  }
 };

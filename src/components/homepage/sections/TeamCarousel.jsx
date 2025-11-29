@@ -34,7 +34,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/jimmy-ramdev.webp"
@@ -56,7 +56,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/vikas-tyagi.webp"
@@ -78,7 +78,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/avinash-shrivastava.webp"
@@ -102,7 +102,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/kalam-khan.webp"
@@ -124,7 +124,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/yogesh-mishra.webp"
@@ -146,7 +146,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/ravi-hinduja.webp"
@@ -168,7 +168,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/shauzab-kazmi.webp"
@@ -190,7 +190,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/azhar-mirza.webp"
@@ -212,7 +212,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/chirag-kapoor.webp"
@@ -234,7 +234,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/prateek-kapoor.webp"
@@ -256,7 +256,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/ashish-rawat.webp"
@@ -278,7 +278,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/rohit-singh.webp"
@@ -300,7 +300,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/dharmendra-kumar.webp"
@@ -324,7 +324,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/neeraj-kataria.webp"
@@ -346,7 +346,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/sachin-khurana.webp"
@@ -368,7 +368,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/sharda-prasad-kushwaha.webp"
@@ -392,7 +392,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/aman-sharma.webp"
@@ -414,7 +414,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/garvit-sharma.webp"
@@ -436,7 +436,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/monu-tyagi.webp"
@@ -458,7 +458,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/hardik-bagla.webp"
@@ -480,7 +480,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/nakul-tyagi.webp"
@@ -502,7 +502,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/adhiraj-singh-sisodiya.webp"
@@ -526,7 +526,7 @@ export default function TeamCarousel() {
                   >
                     <div className="card">
                       <img
-                        alt="MoneyTree Realty Team Member"
+                        alt="9 Square Yard Team Member"
                         decoding="sync"
                         loading="lazy"
                         src="assets/img/home1/prateek-jhulka.webp"
