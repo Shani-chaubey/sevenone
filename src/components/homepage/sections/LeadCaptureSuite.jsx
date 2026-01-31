@@ -307,13 +307,15 @@ export default function LeadCaptureSuite() {
               className="lead-capture-modern-select"
             >
               <option value="">Select Property Type</option>
-              <option value="2 BHK">2 BHK</option>
+              <option value="Residential">Residential</option>
+              <option value="Commercial">Commercial</option>
+              {/* <option value="2 BHK">2 BHK</option>
               <option value="3 BHK">3 BHK</option>
               <option value="4 BHK">4 BHK</option>
               <option value="RETAIL SHOP">Retail Shops</option>
               <option value="STUDIO APARTMENT">Studio Apartment</option>
               <option value="OFFICE SPACE">Office Space</option>
-              <option value="OTHER">Others</option>
+              <option value="OTHER">Others</option> */}
             </select>
           </div>
 

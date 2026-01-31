@@ -108,15 +108,14 @@ export default function Footer() {
               />
             </div>
             <address className="footer-modern-address">
-              Floor No-2, Tower B,
+             SAI STREET, SCO 20/21,
               <br />
-              Tapasya Corp Heights,
+              Sahibzada Ajit Singh Nagar,
               <br />
-              Sector 126, Noida,
-              <br />
-              Uttar Pradesh - 201303
+             Radiala, Punjab 140301
+            
             </address>
-            <div className="footer-modern-social">
+            {/* <div className="footer-modern-social">
               {socialLinks.map((social, index) => (
                 <a
                   key={social.name}
@@ -129,7 +128,7 @@ export default function Footer() {
                   {social.icon}
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           <div className="footer-modern-right">
@@ -169,7 +168,7 @@ export default function Footer() {
                     />
                   </svg>
                 </div>
-                <span>{CONTACT_PHONE_LABEL}</span>
+                <span>9650444812, 9888812165, 9780556699</span>
               </a>
               <a
                 href={`mailto:${CONTACT_EMAIL}`}

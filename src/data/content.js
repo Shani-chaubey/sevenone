@@ -211,10 +211,10 @@ export const aboutUsContent = {
 
 export const contactInfo = {
   address: {
-    line1: "Floor No-2, Tower B",
-    line2: "Tapasya Corp Heights",
-    line3: "Sector 126, Noida",
-    line4: "Uttar Pradesh - 201303",
+    line1: "SAI STREET,",
+    line2: "SCO 20/21,",
+    line3: "Sahibzada Ajit Singh Nagar,",
+    line4: "Radiala, Punjab - 140301",
   },
   rera: [
     { state: "UP", number: "UPRERAAGT25048" },
@@ -235,7 +235,7 @@ export const headingSectionContent = {
     part2:
       ", comprises a group of proficient professionals to provide the world-class Real Estate Service.",
     part3: "Under the leadership of renowned Real Estate Tycoon",
-    accent: "Mr. Sachin Arora",
+    accent: "Mr. Dinesh Chadha & Mr. Suresh Sharma",
     part4:
       ", We at 9 Square Yard SERVICES LTD.(RERA REG.) work with great enthusiasm and provide a diverse catalogue of properties from residential to commercial.",
   },
